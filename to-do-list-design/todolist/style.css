@@ -160,7 +160,7 @@ ul li a{
 
 /* width */
 ::-webkit-scrollbar {
-    width: 1vw;
+    width: 20px;
   }
   
   /* Track */
@@ -199,29 +199,13 @@ ul li a{
         padding: 8px;
     }
 
+    ::-webkit-scrollbar {
+        width: 10px;
+      }
+
 }
 
 
-@media (max-width: 900px){
-    .task-container {
-        flex-direction: column;
-    }
-
-    ul li {
-        height: 30%;
-        width: 90%;
-        margin: 10px 3px 10px 5px;
-        padding: 2px;
-    }
-
-    .buttons-container{
-        margin-bottom: 3%;
-    }
-    h2 {
-        
-        font-size: 2.5rem;
-    }
-}
 
 /*View for very small devices*/
 @media (max-width:440px) {
