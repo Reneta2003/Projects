@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+*{
+        margin: 0;
+        padding: 0;
+        font-family: 'Playfair Display', serif;
+        letter-spacing: 2px;
+    
+  }
+  
+  body {
+    background-color: rgb(63, 62, 62);
+  }
+  
+header{
+  background-color: white;
+  height: 30%;
+  width: 100%;
+}
+
+header p span, header p{
+   font-size: 20px;
+}
+header p span{
+ color: #fc0d0d;
+}
+header p, nav{
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  vertical-align: middle;
+  text-align: center;
+}
+
+header nav ul li a{
+  text-decoration: none;
+  color: darkgray;
+  font-weight: bold;
+  font-size: larger;
+  text-transform: uppercase;
+}
+header nav ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 1%;
+}
+
+
+header nav ul{
+  margin: 0;
+  align-items: center;
+  padding-left: 5%;
+}
+
+header nav ul li a:hover{
+  padding: 1% 1%;
+  border-radius: 5px;
+  color: #fc0d0d;
+  cursor: pointer;
+}
+
+body > header > nav > ul > li:nth-child(6) > ul > li{
+  padding: 2px;
+}
+
+  .gallery-image {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .gallery-image img {
+    height: 250px;
+    width: 350px;
+    transform: scale(1.0);
+    transition: transform 0.4s ease;
+  }
+  
+  .img-box {
+    box-sizing: content-box;
+    margin: 10px;
+    height: 250px;
+    width: 350px;
+    overflow: hidden;
+    display: inline-block;
+    color: white;
+    position: relative;
+    background-color: white;
+  }
+  
+  .caption {
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+    opacity: 0.0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .transparent-box {
+    height: 250px;
+    width: 350px;
+    background-color:rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: background-color 0.3s ease;
+  }
+  
+  .img-box:hover img { 
+    transform: scale(1.1);
+  }
+  
+  .img-box:hover .transparent-box {
+    background-color:rgba(0, 0, 0, 0.5);
+  }
+  
+  .img-box:hover .caption {
+    transform: translateY(-20px);
+    opacity: 1.0;
+  }
+  
+  .img-box:hover {
+    cursor: pointer;
+  }
+  
+  .caption > p:nth-child(2) {
+    font-size: 0.8em;
+  }
+  
+  .opacity-low {
+    opacity: 0.5;
+  }
+  nav footer{
+    padding: 15px 0;
+}

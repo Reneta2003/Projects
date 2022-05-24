@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Cinzel', serif;    
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+body{
+    width: 100%;
+    margin: auto;
+    background-color: rgb(185, 69, 69);
+}
+header{
+    background-color: white;
+    height: 30%;
+    width: 100%;
+}
+
+header p span, header p{
+     font-size: 20px;
+}
+header p span{
+   color: #fc0d0d;
+}
+header p, nav{
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: darkgray;
+    font-weight: bold;
+    font-size: larger;
+    text-transform: uppercase;
+}
+header nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 1%;
+}
+
+header nav ul{
+    margin: 0;
+    align-items: center;
+}
+
+header nav ul li a:hover{
+    padding: 1% 1%;
+    border-radius: 5px;
+    color: #a71818;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+header div  {
+    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.4)), url("women-model-looking-away-t-shirt-wallpaper-preview.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+    padding: 13% 0 9% 4%;
+}
+h1{
+    color:white;
+    font-size: 8vh;
+    margin-bottom: 10%;
+    font-family: 'Cinzel Decorative', cursive;
+}
+h3, h2{
+    font-weight: 800;
+}
+
+
+
+button a{
+    text-decoration: none;
+    font-weight: 500;
+    color:white;
+}
+.black:hover{
+    color: black;
+}
+
+button{
+    background: transparent;
+    padding: 10px 15px;
+    border: 2px solid white;
+    font-size: 22px;
+    color: black;
+}
+button:hover{
+    background: #f19292d2, ;
+    border: 2px solid #890000d2;
+    color:white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+nav ul li a:hover{
+    cursor: pointer;
+    color:#b10000c4;
+}
+
+hr.pink{
+    width: 10%;
+    border: 2px solid rgb(201, 85, 83);
+    margin: auto;
+}
+.header p{
+    width: 50%;
+    margin: auto;
+    padding: 20px 0 100px 0;
+}
+main section.pink{
+    background: rgb(201, 85, 83);
+    color: white;
+    text-align: center;
+}
+main section.pink h2{
+    padding: 20px 0 20px 0;
+
+}
+hr.white{
+    width: 10%;
+    border: 2px solid white;
+    margin: auto;
+}
+main section.pink p{
+    width: 50%;
+    margin: auto;
+    padding: 20px 0;
+}
+main section.pink button{
+    background: transparent;
+    padding: 10px 15px;
+    border: 2px solid white;
+    color:white;
+    margin-bottom: 30px;
+    transition: 0.3 ease;
+}
+
+main section.pink button .black{
+    font-size: 22px;
+    font-weight: 900;
+}
+
+main section.pink button:hover{
+    background: white;
+    color: #000;
+    border: 2px solid white;
+    padding: 10px 15px;
+}
+main section.white{
+    padding: 2% 10% 2% 10%;
+    background: white;
+    text-align: center;
+    display: inline-block;
+}
+.white img{
+    width: 22%;
+}
+.white article{
+    width: 25%;
+    display: inline-table;
+    vertical-align: top;
+    padding-inline: 5%;
+    margin: 2% 0;
+}
+.white h2, hr.pink{
+    margin-bottom: 3%;
+}
+.white article h3{
+    margin-bottom: 2%;
+}
+footer{
+    background: rgb(201, 85, 83);
+    color: white;
+    text-align: center;
+    padding: 2%;
+    font-size: larger;
+    font-weight: bolder;
+}
+footer a{
+    text-decoration: none;
+    color:white;
+}
+
+@media (max-width: 480px){
+    header nav ul li{
+        list-style: none;
+        display: inline-block;
+        padding: 2%;
+    }
+
+    h1{
+        color:white;
+        font-size: 5vh;
+        margin-bottom: 10%;
+        font-family: 'Cinzel Decorative', cursive;
+    }
+
+    main section.pink h2 {
+        font-size: large;
+
+        margin: 10px 20px;
+    }
+
+    main section.pink p {
+        width: 70%;
+        margin: auto;
+        padding: 20px 0;
+    }
+
+    button{
+        background: transparent;
+        padding: 8px 13px;
+        border: 2px solid white;
+        font-size: 20px;
+        color: black;
+    }
+
+    .white img {
+        width: 40%;
+        margin:1%;
+    }
+
+    .white article {
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+
+    main section.white {
+        padding: 4% 10% 4% 10%;
+    }
+
+}

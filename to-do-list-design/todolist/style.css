@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: #4776E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #8E54E9, #4776E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8E54E9, #4776E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #220158;
+
+}
+
+.container {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2vh 4vw;
+    width: 70%;
+    border-radius: 0;
+    box-shadow: 10px 10px lightblue;
+    height: 75vh;
+}
+
+h2{
+    margin: 5%;
+    width: 90%;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.container-header{
+    width: 100%;
+    align-items: center;
+    margin-bottom: 3%;
+}
+
+.input-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 5px;
+}
+
+input{
+    border: none;
+    background: rgb(224, 244, 250);
+    width: 100%;
+    height: 40px;
+    font-size: 1.5rem;
+    color: #4776E6;
+}
+
+::placeholder{
+    color: #220158;
+}
+
+
+/*Task section*/
+
+#tasks{
+    width: 100%;
+    overflow-y:scroll;
+    overflow: auto;
+    margin-bottom: 4%;
+}
+
+.task-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: 3% ;
+    border: none;
+    box-shadow: 0 0 5px 2px rgb(212, 210, 219);
+    
+}
+.task-container:hover{
+    background: rgb(248, 252, 255);
+}
+/*Add button that adds the initial task*/
+.add-button{
+    padding: 5px;
+    font-size: 1.3rem;
+    height: 40px;
+    border: none;
+    color: white;
+    background-color:#4776E6;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.add-button:hover{
+    background:#6d92ea;
+}
+
+/*Buttons through which the task is edited/deleted or a description is added*/
+
+#edit, #delete, #description{
+    border: none;
+    padding: 0 10px;
+    margin: 2px;
+    color: #fff;
+    height: 40px;
+    background: #4776E6;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: 0.3s ease;
+}
+#delete{
+    background-color: #e95454;
+}
+
+#edit:hover, #description:hover{
+    background-color: #6d92ea;
+}
+
+#delete:hover{
+    background-color:   #f27e7e;
+}
+
+
+ul li{
+    list-style: none;
+    height: 40px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+    margin: 20px 3px 20px 0;
+    background-color: rgb(198, 237, 250);
+    padding: 2px;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color:#fff;
+}
+
+ul li a{
+    color: #220158;
+}
+
+/*Scroll bar*/
+
+/* width */
+::-webkit-scrollbar {
+    width: 1vw;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #4776E6; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #7d76de; 
+  }
+
+  /*Mobile version*/
+  @media (max-width:770px){
+      
+    .container {
+        width: 90%;
+    }
+
+    ul li {
+        height: 30%;
+        width: 50%;
+        margin: 20px 3px 20px 5px;
+        padding: 2px;
+    }
+
+    #edit, #delete, #description {
+        max-height: 30%;
+        padding: 8px;
+    }
+
+}
+
+
+@media (max-width: 900px){
+    .task-container {
+        flex-direction: column;
+    }
+
+    ul li {
+        height: 30%;
+        width: 90%;
+        margin: 10px 3px 10px 5px;
+        padding: 2px;
+    }
+
+    .buttons-container{
+        margin-bottom: 3%;
+    }
+    h2 {
+        
+        font-size: 2.5rem;
+    }
+}
+
+/*View for very small devices*/
+@media (max-width:440px) {
+
+    .container {
+        
+        width: 100%;
+        box-shadow: none;
+        
+    }
+
+    h2 {
+        margin: 5%;
+        width: 90%;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+
+    ul li {
+        height: 30%;
+        width: 50%;
+        margin: 20px 3px 20px 5px;
+        padding: 2px;
+    }
+
+    #edit, #delete, #description {
+        max-height: 30%;
+        padding: 8px;
+        height: 30px;
+        font-size: 0.7rem;
+    }
+
+    input {
+        font-size: 1.2rem;
+    }
+    .task-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin: 3%;
+        border: none;
+        box-shadow: 0 0 5px 2px rgb(212, 210, 219);
+    }
+
+    ul li {
+        width: 80%;
+        margin: 2%;
+        padding: 2px;
+        font-size: 1rem;
+    }
+
+    .buttons-container{
+        margin-bottom: 1%;
+    }
+
+    
+}

@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Macondo&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Macondo', cursive;
+    letter-spacing: 2px;
+}
+/*
+Color scheme:
+#05386B
+#379683
+#5CDB95
+#8EE4AF
+#EDF5E1
+*/
+body{
+    width: 100%;
+    margin: auto;
+    background-color: #8EE4AF;
+}
+header{
+    background-color: #5CDB95;
+    height: 30%;
+    width: 100%;
+    justify-content: center ;
+}
+
+header p, nav{
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: #05386B;
+    font-weight: bold;
+    font-size: larger;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover{
+    cursor: pointer;
+}
+header nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 1%;
+}
+header nav ul li:hover{
+    background-color: #EDF5E1;opacity:0.8;
+    border-radius: 7px;
+}
+
+header nav ul{
+    margin: 0;
+    align-items: center;
+}
+
+header nav ul li a:hover{
+    padding: 0.8% 0.2%;
+    border-radius: 15px;
+    color: #096187;
+    cursor: pointer;
+}
+
+header .help  {
+    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.4)), url("images/technohal.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 13% 0 3% 0%;
+  height: 80%;
+}
+h1{
+    color:white;
+    display: inline-table;
+    font-size: 4.5vw;
+    margin-bottom: 4%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Macondo', cursive;
+    font-weight: 300;
+    text-align: center;
+    display: inherit;
+    width: 97%;
+    vertical-align: middle;
+    
+}
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+    h1 {
+        color:white;
+        display: inline-table;
+        font-size: 4.5vw;
+        margin-bottom: 4%;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: 'Macondo', cursive;
+        font-weight: 300;
+        text-align: center;
+        display: inherit;
+        width: 97%;
+        vertical-align: middle;
+    }
+  }
+  
+  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+  @media screen and (max-width: 400px) {
+        h1 {
+            color:white;
+            display: inline-table;
+            font-size: 15vw;
+            margin-bottom: 4%;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: 'Macondo', cursive;
+            font-weight: 300;
+            text-align: center;
+            display: inherit;
+            width: 97%;
+            vertical-align: middle;
+        }
+  }
+header p{
+    color:white;
+    display: inline-table;
+    font-size: 5vh;
+    margin-bottom: 4%;
+    margin-left: auto;
+    margin-right: auto;
+    display: inherit;
+    font-family: 'Macondo', cursive;
+    font-weight: 150;
+    text-align: center;
+    width: 97%;
+    vertical-align: middle;
+}
+button a{
+    text-decoration: none;
+    color:white;
+}
+.black:hover{
+    color: black;
+}
+
+button{
+    background: transparent;
+    padding: 1% 2%;
+    border: 2px solid white;
+    font-size: x-large;
+    color: black;
+    display:inherit;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Macondo', cursive;
+    text-align: center;
+}
+
+button:hover{
+    background: #379683;
+    color:white;
+    cursor: pointer;
+    border: none;
+}
+.lightGreen{
+    display: inline-table   ;
+    margin: 5% 5% 5% 5%;
+}
+.lightGreen p{
+    font-size: x-large;
+    margin:4%;
+    font-family: 'Fira Sans', sans-serif;
+    text-align: justify;
+    padding:0 20% 0 20%;
+    color: #05386B;
+}
+
+.lightGreen span{
+    font-size: xx-large;
+    font-family: 'Macondo', cursive;
+}
+main section.white{
+    padding: 2% 10% 2% 10%;
+    background: #EDF5E1;
+    text-align: center;
+}
+.white img{
+    width: 22%;
+}
+.white article{
+    width: 25%;
+    display: inline-table;
+    vertical-align: top;
+    padding-inline: 5%;
+    margin: 3%;
+}
+.white h2, hr.pink{
+    margin-bottom: 3%;
+}
+.white article h3{
+    margin-bottom: 2%;
+}
+hr.pink{
+    width: 10%;
+    border: 2px solid #05386B;
+    margin: auto;
+}

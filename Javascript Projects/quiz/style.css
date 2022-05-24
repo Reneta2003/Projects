@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    background: #B993D6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #8CA6DB, #B993D6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8CA6DB, #B993D6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    min-height: 100vh;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.quiz-container{
+    background-color: rgb(255,255,255);
+    box-shadow: 0 0 10px 2px rgb(158, 150, 180);
+    width: 600px;
+    max-width: 100%;
+}
+
+.quiz-header{
+    padding: 3rem;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+h2{
+    margin: 0;
+}
+
+ul li{
+    font-weight: 500;
+    margin:1rem 0 ;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+ul li label{
+    cursor: pointer;
+}
+
+button{
+    font-size: 1.3rem;
+    background-color: #678dd9;
+    width: 100%;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    transition: ease-out 0.3s;
+    outline: none;
+    padding: 1rem;
+    font-family: inherit;
+}
+
+button:hover{
+    background: #a26ec9;
+
+}
+button:hover:after{
+    width: 100%;
+}
